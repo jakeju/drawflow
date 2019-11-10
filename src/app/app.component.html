@@ -1,3 +1,10 @@
 <h1> {{ title }}</h1>
 <hr>
+<amexio-text-input 
+[pattern]="'\d{5}'"  
+[place-holder]="'XXXXX'"  
+[amexio-mask-pattern]="'XXXXX'" 
+[field-label]="'Zip'"
+[(ngModel)]="zip">
+</amexio-text-input>
 <router-outlet></router-outlet>
